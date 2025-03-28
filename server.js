@@ -6,10 +6,10 @@ const knex = require('knex');
 const db = knex({
   client: 'pg', 
   connection: {
-    host: dpg-cvjg99h5pdvs73c9or80-a.ohio-postgres.render.com,
-    user: smartbraindb_xetv_user,
-    password: P7lGX7DoovIV83gWxkclOyJVwbnKUBQW,
-    database: smartbraindb_xetv
+    host: 'dpg-cvjg99h5pdvs73c9or80-a.ohio-postgres.render.com',
+    user: 'smartbraindb_xetv_user',
+    password: 'P7lGX7DoovIV83gWxkclOyJVwbnKUBQW',
+    database: 'smartbraindb_xetv'
   },
 });
 
