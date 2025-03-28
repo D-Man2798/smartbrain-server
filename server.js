@@ -4,12 +4,12 @@ const cors = require('cors')
 const knex = require('knex');
 
 const db = knex({
-  client: 'pg', // Use 'mysql' for MySQL
+  client: 'pg', 
   connection: {
-    host: process.env.DB_HOST, // Database host (Render provides this)
-    user: process.env.DB_USER, // Database username (Render provides this)
-    password: process.env.DB_PASSWORD, // Database password (Render provides this)
-    database: process.env.DB_NAME, // Database name (Render provides this)
+    host: dpg-cvjg99h5pdvs73c9or80-a,
+    user: smartbraindb_xetv_user,
+    password: P7lGX7DoovIV83gWxkclOyJVwbnKUBQW,
+    database: smartbraindb_xetv
   },
 });
 
