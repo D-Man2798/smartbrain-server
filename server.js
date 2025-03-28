@@ -4,15 +4,16 @@ const cors = require('cors')
 const knex = require('knex');
 
 const db = knex({
-  client: 'pg',
+  client: 'pg', // Use 'mysql' for MySQL
   connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : '1025319dD!',
-    database : 'smart-brain'
-  }
+    host: process.env.DB_HOST, // Database host (Render provides this)
+    user: process.env.DB_USER, // Database username (Render provides this)
+    password: process.env.DB_PASSWORD, // Database password (Render provides this)
+    database: process.env.DB_NAME, // Database name (Render provides this)
+    //ssl: { rejectUnauthorized: false }, // For secure connections to Render's database
+  },
+});
 
-})
 
 const app = express();
 
