@@ -10,7 +10,7 @@ const db = knex({
     user: process.env.DB_USER, // Database username (Render provides this)
     password: process.env.DB_PASSWORD, // Database password (Render provides this)
     database: process.env.DB_NAME, // Database name (Render provides this)
-    //ssl: { rejectUnauthorized: false }, // For secure connections to Render's database
+    ssl: { rejectUnauthorized: false }, // For secure connections to Render's database
   },
 });
 
