@@ -16,8 +16,10 @@ const db = knex({
     host: 'dpg-cvjg99h5pdvs73c9or80-a.ohio-postgres.render.com',
     user: 'smartbraindb_xetv_user',
     password: 'P7lGX7DoovIV83gWxkclOyJVwbnKUBQW',
-    database: 'smartbraindb_xetv'
+    database: 'smartbraindb_xetv',
+    ssl: { rejectUnauthorized: false } // Required for Render PostgreSQL
   },
+  debug: true // Logs SQL queries for debugging
 });
 
 
